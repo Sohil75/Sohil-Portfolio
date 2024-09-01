@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7ac24284a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo"><span>Md</span>Sohil</h1>
+          <!-- <img src="images/log3.png" alt="logo" class="logo" /> -->
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Project</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="headerText">
+          <p>Aspiring Web developer</p>
+          <h1>
+            Hi, I am <span>Md Sohil</span> <br />a front-end engineer with a
+            love for creating dynamic web applications
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/ahalbx.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subTitle">About Me</h1>
+            <p>
+              Hi, I’m Md Sohil, a passionate frontend developer with a
+              background in Computer Science and Engineering. I specialize in
+              creating dynamic, responsive websites that blend functionality
+              with aesthetic design. My technical expertise extends beyond
+              frontend development to include Java, SQL, and desktop application
+              development. With a strong foundation in HTML, CSS, and
+              JavaScript, coupled with experience in backend technologies and
+              database management, I’m adept at delivering comprehensive and
+              engaging digital solutions. I’m always eager to tackle new
+              challenges and explore innovative approaches. Explore my portfolio
+              to see my work and connect with me for potential collaborations!
+            </p>
+            <div class="tabTitle">
+              <p class="tabLinks active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tabLinks" onclick="openTab('Project')">Project</p>
+              <p class="tabLinks" onclick="openTab('Education')">Education</p>
+            </div>
+            <div class="tabContents activeTab" id="skills">
+              <ul>
+                <li><span>Frontend Development</span><br />HTML, CSS, React</li>
+                <li>
+                  <span>Programming Languages</span><br />Core Java, JavaScript
+                </li>
+                <li>
+                  <span>Database Management</span><br />SQl Queries, SQLite
+                  Browser, Database Design, Query Optimization
+                </li>
+                <li><span>Version Control</span><br />Git, GitHub</li>
+              </ul>
+            </div>
+            <div class="tabContents" id="Project">
+              <ul>
+                <li>
+                  <span>Shoping Cart Web Application</span><br />A web-based
+                  shopping cart application built using HTML, CSS, JavaScript,
+                  and local APIs. It allows users to browse products, add items
+                  to a cart, and view the total bill in real-time. The
+                  application provides a seamless shopping experience with
+                  dynamic product displays and efficient data handling, making
+                  it a solid foundation for further development into a
+                  comprehensive e-commerce platform.
+                </li>
+                <li>
+                  <span>EncryptEase </span><br />A desktop application developed
+                  using Java, Java Swing, and the AES encryption algorithm.
+                  EncryptEase enables users to securely encrypt and decrypt
+                  their data with a user-friendly interface, ensuring privacy
+                  and data protection. This tool is ideal for anyone looking to
+                  safeguard sensitive information with reliable encryption
+                  technology.
+                </li>
+                <li>
+                  <span>UserVault</span><br />A desktop application created
+                  using Java, SQL, SQLite Browser, and Java Swing. UserVault
+                  securely stores user data and utilizes it for authentication
+                  purposes. The application provides a simple and effective
+                  solution for managing and protecting user credentials, making
+                  it a valuable tool for those who need to store sensitive
+                  information securely.
+                </li>
+              </ul>
+            </div>
+            <div class="tabContents" id="Education">
+              <ul>
+                <li>
+                  <span
+                    >Bachelor of Technology in Computer Science &
+                    Engineering</span
+                  ><br />Presidency University, 2020 - 2024 <br />GPA : 7.45
+                </li>
+                <li>
+                  <span>PUC Biology</span><br />Narayana Pu College Ballari,
+                  2018 -2020 <br />GPA : 8.51
+                </li>
+                <li>
+                  <span>SSLC</span><br />St. Joesph High School, 2017 - 2018<br />
+                  Percentage : 79.04%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subTitle">My Services</h1>
+        <div class="servicesList">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Description: Building responsive, user-friendly websites and web
+              applications using HTML, CSS, JavaScript, and modern frameworks
+              like React. <br />Details: Specializing in both frontend and
+              backend development to create seamless and dynamic user
+              experiences.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Desktop Application</h2>
+            <p>
+              Description: Creating desktop applications using Java and Java
+              Swing, tailored to meet specific business needs <br />
+              Details: Expertise in developing applications like UserVault and
+              EncryptEase that focus on data security and user authentication.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-github"></i>
+            <h2>Version Control</h2>
+            <p>
+              Description: Utilizing Git and GitHub for effective version
+              control and collaborative development. <br />
+              Details: Skilled in managing code repositories, branching,
+              merging, and resolving conflicts to maintain clean and organized
+              codebases.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portofilo -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subTitle">My Work</h1>
+        <div class="workList">
+          <div class="work">
+            <img src="images/deskApp.png" alt="" />
+            <div class="layer">
+              <h3>UserVault</h3>
+              <p>
+                A desktop application developed using Java, SQL, SQLite Browser,
+                and Java Swing. UserVault securely stores user credentials and
+                facilitates secure login processes. The application provides a
+                user-friendly interface for managing and protecting sensitive
+                information, ensuring data integrity and security for end users.
+              </p>
+              <a href="https://github.com/Sohil75/userLoginData.git"
+                ><i class="fa-solid fa-link-slash"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/encrpt.png" alt="" />
+            <div class="layer">
+              <h3>EncryptEase</h3>
+              <p>
+                A desktop application built using Java, Java Swing, and the AES
+                encryption algorithm. EncryptEase allows users to easily encrypt
+                and decrypt sensitive data, ensuring privacy and security. The
+                application features a straightforward user interface, making it
+                simple for anyone to protect their information with robust
+                encryption techniques.
+              </p>
+              <a href="https://github.com/Sohil75/EncryptEase.git"
+                ><i class="fa-solid fa-link-slash"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/cartap.png" alt="" />
+            <div class="layer">
+              <h3>Shoping Cart App</h3>
+              <p>
+                A web-based application developed using HTML, CSS, JavaScript,
+                and local APIs. This app allows users to browse products, add
+                items to a shopping cart, and view the total cost in real-time.
+                With its dynamic interface and efficient data handling, the
+                Shopping Cart Application provides a seamless user experience
+                and serves as a foundation for building more advanced e-commerce
+                solutions.
+              </p>
+              <a href="https://shop-cart-app.onrender.com"
+                ><i class="fa-solid fa-link-slash"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn"> See More</a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="Contact">
+      <div class="container">
+        <div class="row">
+          <div class="contactLeft">
+            <h1 class="subTitlep">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-paper-plane"></i> mdsohil1802@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 9008637087</p>
+            <div class="socialIcon">
+              <a href="https://www.linkedin.com/in/md-sohil-29a51221a"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com/Sohil75"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="images/mdsResumeFro.pdf" class="btn btn2" download
+              >Download Resume</a
+            >
+          </div>
+          <div class="contactRight">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright &copy; Md Sohil <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- 
+    <script>
+      var tablinks = document.getElementsByClassName("tabLinks");
+      var tabcontents = document.getElementsByClassName("tabContents");
+      function openTab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("activeTab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("activeTab");
+      }
+    </script>
+
+    <script>
+      var sideMenu = document.getElementById("sideMenu");
+
+      function openMenu() {
+        sideMenu.style.right = "0";
+      }
+      function closeMenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxXN5b5HeQbnd_51QzyXMy047seXi_FhswJ2IjMPcYJh6iuavTDa_HWCAeSJMK9CnK7/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script> -->
+  </body>
+</html>
