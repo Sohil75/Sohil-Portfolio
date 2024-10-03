@@ -28,20 +28,32 @@ body{
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
-      ),url(images/bgm.jpg);
+      ),url(images/bj.avif);
     background-size: cover;
-  background-position: center;
-  
+  background-position: center; 
+}
+.logo-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin-right: 0px; /* Space between icon and logo text */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.logo-icon:hover{
+    transform: scale(1.2);
 }
 .container{
     padding: 10px 10%;
-   
+
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+   
 }
 .logo{
     /* width: 140px; */
@@ -56,7 +68,7 @@ nav{
     padding: 10px 20px; /* Padding */
     border-radius: 5px; /* Rounded corners */
     display: inline-block; /* To adjust spacing around the text */
-   
+   margin-right: 410px;
     
 }
 .logo:hover {
@@ -66,6 +78,7 @@ nav{
 .logo span{
     color: #226a55;
 }
+
 
 nav ul li{
     display: inline-block;
@@ -224,12 +237,15 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    transition: opacity 0.5s, height 0.5s;
 }
 .work img{
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    object-fit: cover;
+    height: 300px;
 }
 .layer{
     width: 100%;
@@ -246,15 +262,19 @@ nav ul li a:hover::after{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 13px;
+    font-size: 11px;
     transition: height 0.5s;
+}
+.layer p{
+    text-align: justify;
+    margin-bottom: 1.5em;
 }
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
 }
 .layer a{
-    margin-top: 20px;
+    margin-top: 5px;
     text-decoration: none;
     color: #226a55;
     font-size: 18px;
@@ -284,6 +304,18 @@ nav ul li a:hover::after{
 }
 .btn:hover{
     background: #226a55;
+}
+.hidden{
+    opacity: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+.show{
+    opacity: 1;
+    height: auto;
+    pointer-events: auto;
+    transition: opacity 0.5s, height 0.5s;
 }
 
 /* contact */
@@ -371,6 +403,7 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        cursor: pointer;
     }
     nav ul{
         background: #226a55;
@@ -418,7 +451,9 @@ nav .fa-solid{
     .logo {
         font-size: 36px;
         padding: 8px 16px;
+        margin-right: 120px;
     }
+   
 }
 #msg{
     color: #61b752;

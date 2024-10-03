@@ -18,6 +18,7 @@
     <div id="header">
       <div class="container">
         <nav>
+          <img src="./images/logoimage.png" alt="logo" class="logo-icon" />
           <h1 class="logo"><span>Md</span>Sohil</h1>
           <!-- <img src="images/log3.png" alt="logo" class="logo" /> -->
           <ul id="sideMenu">
@@ -31,9 +32,9 @@
           <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="headerText">
-          <p>Aspiring Web developer</p>
+          <p>Aspiring Web Developer</p>
           <h1>
-            Hi, I am <span>Md Sohil</span> <br />a front-end engineer with a
+            Hi, I am <span>Md Sohil</span> <br />a Front-End Developer with a
             love for creating dynamic web applications
           </h1>
         </div>
@@ -65,7 +66,9 @@
               <p class="tabLinks active-link" onclick="openTab('skills')">
                 Skills
               </p>
-              <p class="tabLinks" onclick="openTab('Project')">Project</p>
+              <p class="tabLinks" onclick="openTab('Project')">
+                certifications
+              </p>
               <p class="tabLinks" onclick="openTab('Education')">Education</p>
             </div>
             <div class="tabContents activeTab" id="skills">
@@ -84,32 +87,27 @@
             <div class="tabContents" id="Project">
               <ul>
                 <li>
-                  <span>Shoping Cart Web Application</span><br />A web-based
-                  shopping cart application built using HTML, CSS, JavaScript,
-                  and local APIs. It allows users to browse products, add items
-                  to a cart, and view the total bill in real-time. The
-                  application provides a seamless shopping experience with
-                  dynamic product displays and efficient data handling, making
-                  it a solid foundation for further development into a
-                  comprehensive e-commerce platform.
+                  <span>Java Programming - Udemy</span><br />
+                  A detailed Java programming course covering core concepts and
+                  advanced techniques.
                 </li>
                 <li>
-                  <span>EncryptEase </span><br />A desktop application developed
-                  using Java, Java Swing, and the AES encryption algorithm.
-                  EncryptEase enables users to securely encrypt and decrypt
-                  their data with a user-friendly interface, ensuring privacy
-                  and data protection. This tool is ideal for anyone looking to
-                  safeguard sensitive information with reliable encryption
-                  technology.
+                  <span>JavaScript Fundamentals - Udemy</span><br />
+                  A hands-on course focused on scripting, dynamic content
+                  creation, and browser interaction using JavaScript.
                 </li>
                 <li>
-                  <span>UserVault</span><br />A desktop application created
-                  using Java, SQL, SQLite Browser, and Java Swing. UserVault
-                  securely stores user data and utilizes it for authentication
-                  purposes. The application provides a simple and effective
-                  solution for managing and protecting user credentials, making
-                  it a valuable tool for those who need to store sensitive
-                  information securely.
+                  <span>CSS Fundamentals - HackerRank</span><br />
+                  A CSS course focused on styling web pages and creating
+                  responsive designs.
+                </li>
+                <li>
+                  <span
+                    >Software Engineering and Agile Software Development -
+                    Infosys Springboard</span
+                  ><br />
+                  A foundational course covering software engineering principles
+                  and agile methodologies.
                 </li>
               </ul>
             </div>
@@ -122,11 +120,13 @@
                   ><br />Presidency University, 2020 - 2024 <br />GPA : 7.45
                 </li>
                 <li>
-                  <span>PUC Biology</span><br />Narayana Pu College Ballari,
-                  2018 -2020 <br />GPA : 8.51
+                  <span>Higher Secondary Education in Science (PCMB)</span
+                  ><br />Narayana Pu College Ballari, 2018 -2020 <br />GPA :
+                  8.51
                 </li>
                 <li>
-                  <span>SSLC</span><br />St. Joesph High School, 2017 - 2018<br />
+                  <span>Secondary Education</span><br />St. Joesph High School,
+                  2017 - 2018<br />
                   Percentage : 79.04%
                 </li>
               </ul>
@@ -185,7 +185,7 @@
         <h1 class="subTitle">My Work</h1>
         <div class="workList">
           <div class="work">
-            <img src="images/deskApp.png" alt="" />
+            <img src="images/user.jpg" alt="UserVault-App" />
             <div class="layer">
               <h3>UserVault</h3>
               <p>
@@ -200,8 +200,9 @@
               ></a>
             </div>
           </div>
+
           <div class="work">
-            <img src="images/encrpt.png" alt="" />
+            <img src="images/encrp.jpg" alt="EncryptEase-App" />
             <div class="layer">
               <h3>EncryptEase</h3>
               <p>
@@ -218,7 +219,61 @@
             </div>
           </div>
           <div class="work">
-            <img src="images/cartap.png" alt="" />
+            <img src="images/cart.avif" alt="ShoppingCart-App" />
+            <div class="layer">
+              <h3>Shoping Cart App</h3>
+              <p>
+                A web-based application developed using HTML, CSS, JavaScript,
+                and local APIs. This app allows users to browse products, add
+                items to a shopping cart, and view the total cost in real-time.
+                With its dynamic interface and efficient data handling, the
+                Shopping Cart Application provides a seamless user experience
+                and serves as a foundation for building more advanced e-commerce
+                solutions.
+              </p>
+              <a href="https://shop-cart-app.onrender.com"
+                ><i class="fa-solid fa-link-slash"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/files.avif" alt="ShoppingCart-App" />
+            <div class="layer">
+              <h3>FolderCreater</h3>
+              <p>
+                FolderCreate is a simple Java utility that automates folder
+                creation, making it easy for users to organize files
+                efficiently. With a straightforward interface and Java’s file
+                handling capabilities, it simplifies directory management for
+                frequent use.
+              </p>
+              <a href="https://github.com/Sohil75/FolderCreater"
+                ><i class="fa-solid fa-link-slash"></i
+              ></a>
+            </div>
+          </div>
+          <!-- hiddenItem -->
+
+          <div class="work hidden">
+            <img src="images/cartap.png" alt="ShoppingCart-App" />
+            <div class="layer">
+              <h3>Shoping Cart App</h3>
+              <p>
+                A web-based application developed using HTML, CSS, JavaScript,
+                and local APIs. This app allows users to browse products, add
+                items to a shopping cart, and view the total cost in real-time.
+                With its dynamic interface and efficient data handling, the
+                Shopping Cart Application provides a seamless user experience
+                and serves as a foundation for building more advanced e-commerce
+                solutions.
+              </p>
+              <a href="https://shop-cart-app.onrender.com"
+                ><i class="fa-solid fa-link-slash"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work hidden">
+            <img src="images/cartap.png" alt="ShoppingCart-App" />
             <div class="layer">
               <h3>Shoping Cart App</h3>
               <p>
@@ -236,7 +291,7 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn"> See More</a>
+        <a href="#" class="btn" id="seeMoreBtn"> See More</a>
       </div>
     </div>
 
@@ -254,12 +309,15 @@
               <a href="https://www.linkedin.com/in/md-sohil-29a51221a"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a
+                href="https://www.instagram.com/__sohil_18?igsh=dDNnanVmZTZscWVz"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
               <a href="https://github.com/Sohil75"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
-            <a href="images/sohilFrontendResume.pdf" class="btn btn2" download
+            <a href="images/sohilResumeFrontend.pdf" class="btn btn2" download
               >Download Resume</a
             >
           </div>
