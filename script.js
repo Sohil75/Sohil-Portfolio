@@ -38,13 +38,13 @@ var tablinks = document.getElementsByClassName("tabLinks");
           .catch((error) => console.error("Error!", error.message));
       });
 // See More btn
-      // const seeMoreBtn  = document.getElementById('seeMoreBtn');
-      // const hiddenWork = document.querySelectorAll('.hidden');
-      // seeMoreBtn.addEventListener('click',function(e){
-      //   e.preventDefault();
-      //   hiddenWork.forEach(function(work){
-      //     work.classList.add('show');
-      //   });
+      const seeMoreBtn  = document.getElementById('seeMoreBtn');
+      const hiddenWork = document.querySelectorAll('.hidden');
+      seeMoreBtn.addEventListener('click',function(e){
+        e.preventDefault();
+        hiddenWork.forEach(function(work){
+          work.classList.add('show');
+        });
 
-      //   seeMoreBtn.style.display='none';
-      // });
+        seeMoreBtn.style.display='none';
+      });
