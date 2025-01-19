@@ -34,7 +34,7 @@
         <div class="headerText">
           <p>Aspiring Web Developer</p>
           <h1>
-            Hi, I am <span>Md Sohil</span> <br />a Front-End Developer with a
+            Hi, I am <span>Md Sohil</span> <br />a Full Stack Developer with a
             love for creating dynamic web applications
           </h1>
         </div>
@@ -50,17 +50,12 @@
           <div class="about-col-2">
             <h1 class="subTitle">About Me</h1>
             <p>
-              Hi, I’m Md Sohil, a passionate frontend developer with a
-              background in Computer Science and Engineering. I specialize in
-              creating dynamic, responsive websites that blend functionality
-              with aesthetic design. My technical expertise extends beyond
-              frontend development to include Java, SQL, and desktop application
-              development. With a strong foundation in HTML, CSS, and
-              JavaScript, coupled with experience in backend technologies and
-              database management, I’m adept at delivering comprehensive and
-              engaging digital solutions. I’m always eager to tackle new
-              challenges and explore innovative approaches. Explore my portfolio
-              to see my work and connect with me for potential collaborations!
+              Hi, I’m Md Sohil, a Full Stack Developer with a knack for turning complex problems into elegant digital solutions. From crafting seamless user interfaces with React and Bootstrap to building robust backend systems with Node.js and MongoDB, I specialize in delivering end-to-end web applications that don’t just work—they impress.  
+
+              With a background in Computer Science and Engineering, I’ve mastered the art of blending creativity with technical expertise. Whether it’s creating responsive designs, optimizing databases, or building desktop applications, I’m driven by a passion for innovation and a commitment to excellence.  
+              
+              Let’s collaborate and bring your ideas to life!  
+              
             </p>
             <div class="tabTitle">
               <p class="tabLinks active-link" onclick="openTab('skills')">
@@ -73,16 +68,28 @@
             </div>
             <div class="tabContents activeTab" id="skills">
               <ul>
-                <li><span>Frontend Development</span><br />HTML, CSS, React</li>
                 <li>
                   <span>Programming Languages</span><br />Core Java, JavaScript
                 </li>
+                <li><span>Frontend Development</span><br />HTML, CSS, React, Bootstrap</li>
                 <li>
-                  <span>Database Management</span><br />SQl Queries, SQLite
-                  Browser, Database Design, Query Optimization
+                  <span>Backend Development</span><br />Node.js, Express.js
                 </li>
-                <li><span>Version Control</span><br />Git, GitHub</li>
+                <li>
+                  <span>Full-Stack Development</span><br />MERN Stack (MongoDB, Express.js, React, Node.js)
+                </li>
+                <li>
+                  <span>Database Management</span><br />SQL Queries, SQLite Browser, Database Design, MongoDB
+                </li>
+                <li>
+                  <span>Version Control</span><br />Git, GitHub
+                </li>
+                <li>
+                  <span>Soft Skils </span><br />Problem-Solving, Adaptability, Attention to Detail, Continuous Learning, Communication
+                </li>
+                
               </ul>
+              
             </div>
             <div class="tabContents" id="Project">
               <ul>
@@ -142,7 +149,7 @@
         <div class="servicesList">
           <div>
             <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
+            <h2>Web Development</h2>
             <p>
               Description: Building responsive, user-friendly websites and web
               applications using HTML, CSS, JavaScript, and modern frameworks
@@ -184,6 +191,18 @@
       <div class="container">
         <h1 class="subTitle">My Work</h1>
         <div class="workList">
+          <div class="work">
+            <img src="images/urbangent.png" alt="UserVault-App" />
+            <div class="layer">
+              <h3>UrbanGent</h3>
+  <p>
+    A modern e-commerce application for fashion built using the MERN stack (MongoDB, Express.js, React, and Node.js). UrbanGent offers a seamless shopping experience with features like dynamic product displays, an interactive cart system, and secure login. The app is designed for scalability, responsive design, and user-friendly navigation, ensuring a smooth experience for both shoppers and administrators.
+  </p>
+              <a href="https://urbangentapp.netlify.app/"
+                ><i class="fa-solid fa-link-slash"></i
+              ></a>
+            </div>
+          </div>
           <div class="work">
             <img src="images/user.jpg" alt="UserVault-App" />
             <div class="layer">
@@ -277,7 +296,84 @@
       </div>
     </div>
 
+    <!-- certificates -->
+     <div id="certificates">
+      <h1 class="subTitle">My Work</h1>
+    <div class="certificate-container">
+      
+      <div class="mycertifcates">
+        <div class="numbertext">1/5</div>
+        <img
+          src="images/certificates/java.png"
+          alt="java Certificate"
+          style="width: 100%"
+        />
+      </div>
+      <div class="mycertifcates">
+        <div class="numbertext">1/5</div>
+        <img
+          src="images/certificates/javascript.png"
+          alt="java Certificate"
+          style="width: 100%"
+        />
+      </div>
+      <div class="mycertifcates">
+        <div class="numbertext">1/5</div>
+        <img
+          src="images/certificates/sldc.png"
+          alt="java Certificate"
+          style="width: 100%"
+        />
+      </div>
+      <div class="mycertifcates">
+        <div class="numbertext">1/5</div>
+        <img
+          src="images/certificates/css.png"
+          alt="CSS Certificate"
+          style="width: 100%"
+        />
+      </div>
+      <div class="mycertifcates">
+        <div class="numbertext">1/5</div>
+        <img
+          src="images/certificates/sql.png"
+          alt="sql Certificate"
+          style="width: 100%"
+        />
+      </div>
+      <a onclick="plusSlides(-1)" class="prev">&#10094</a>
+      <a onclick="plusSlides(1)" class="next">&#10095</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="images/certificates/java.png" alt="java" style="width: 100%;" class="demo cursor"
+          onclick="currentSlide(1)">
+        </div>
+        <div class="column">
+          <img src="images/certificates/javascript.png" alt="javascript" style="width: 100%;" class="demo cursor"
+          onclick="currentSlide(2)">
+        </div>
+        <div class="column">
+          <img src="images/certificates/sldc.png" alt="sldc" style="width: 100%;" class="demo cursor"
+          onclick="currentSlide(3)">
+        </div>
+        <div class="column">
+          <img src="images/certificates/css.png" alt="css" style="width: 100%;" class="demo cursor"
+          onclick="currentSlide(4)">
+        </div>
+        <div class="column">
+          <img src="images/certificates/sql.png" alt="sql" style="width: 100%;" class="demo cursor"
+          onclick="currentSlide(5)">
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- Contact -->
+     
     <div id="Contact">
       <div class="container">
         <div class="row">
@@ -299,7 +395,7 @@
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
-            <a href="images/sohilResumeFrontend.pdf" class="btn btn2" download
+            <a href="images/MDSOHILRESUME.pdf" class="btn btn2" download
               >Download Resume</a
             >
           </div>
